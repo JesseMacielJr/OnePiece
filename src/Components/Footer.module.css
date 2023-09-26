@@ -1,4 +1,4 @@
-footer {
+.footer {
   width: 100%;
   padding: 1rem;
   position: absolute;
@@ -6,17 +6,17 @@ footer {
   bottom: 1rem;
 }
 
-footer p {
+.footer p {
   font-size: 0.875rem;
   color: rgba(250, 250, 250, 0.5);
 }
 
-footer p span {
+.footer p span {
   font-weight: 700;
   color: #fff;
 }
 
-footer p span:hover {
+.footer p span:hover {
   font-weight: 700;
   color: rgba(255, 255, 255, 0.75);
 }
