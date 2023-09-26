@@ -1,13 +1,18 @@
-// import React from "react";
 import styles from "./Personagem.module.css";
 import Logo from "../assets/OnePieceLogo.svg";
+import { usePersonagemContext } from "../PersonagemContext";
 
-const Personagem = ({ personagem }) => {
+const Personagem = () => {
+  const { personagens, personagemAtivoID } = usePersonagemContext();
+  const personagemAtual = personagens.find(
+    (personagem) => personagem.id === personagemAtivoID
+  );
+
   return (
     <div className={styles.personagem}>
       <img src={Logo} alt="One Piece Logo" />
-      <h1>{personagem.nome}</h1>
-      <p>{personagem.descricao}</p>
+      <h1>{personagemAtual.nome}</h1>
+      <p>{personagemAtual.descricao}</p>
     </div>
   );
 };

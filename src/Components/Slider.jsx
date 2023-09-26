@@ -1,8 +1,12 @@
+import React from "react";
 import styles from "./Slider.module.css";
 import Slides from "./Slides";
-import seta from "../assets/seta.svg";
+// import seta from "../assets/seta.svg";
+import { usePersonagemContext } from "../PersonagemContext";
 
-const Slider = ({ personagens, setPersonagemAtivo }) => {
+const Slider = () => {
+  const { personagens } = usePersonagemContext();
+
   return (
     <div className={styles.slider}>
       {/* <button>
@@ -15,13 +19,7 @@ const Slider = ({ personagens, setPersonagemAtivo }) => {
       </button> */}
 
       {personagens.map((personagem, index) => {
-        return (
-          <Slides
-            setPersonagemAtivo={setPersonagemAtivo}
-            key={index}
-            personagem={personagem}
-          />
-        );
+        return <Slides personagem={personagem} key={index} />;
       })}
 
       {/* <button>

@@ -1,13 +1,15 @@
 import React from "react";
 import styles from "./Slides.module.css";
+import { usePersonagemContext } from "../PersonagemContext";
 
-const Slides = ({ personagem, setPersonagemAtivo }) => {
+const Slides = ({ personagem }) => {
+  const { setPersonagemAtivoID } = usePersonagemContext();
+
   function handleClick(e) {
     e.preventDefault();
-    setPersonagemAtivo(personagem.imagem);
+    setPersonagemAtivoID(personagem.id);
   }
 
-  console.log(personagem);
   return (
     <div className={styles.preview} onClick={handleClick}>
       {<img src={`src/assets/${personagem.imagem}`} alt={personagem.nome} />}
