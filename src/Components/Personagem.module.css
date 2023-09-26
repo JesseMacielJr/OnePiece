@@ -1,0 +1,23 @@
+.personagem {
+  min-height: 400px;
+}
+
+.personagem img {
+  width: 14rem;
+  display: inline-block;
+  margin-bottom: 4rem;
+}
+
+.personagem h1 {
+  color: var(--texto);
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.personagem p {
+  color: var(--texto);
+  font-size: 1.125rem;
+  font-weight: 400;
+  max-width: 30rem;
+}
