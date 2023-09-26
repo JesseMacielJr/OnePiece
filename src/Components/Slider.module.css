@@ -12,12 +12,37 @@
   align-items: center;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, .8);
+  padding: 8px;
 }
 
-.voltar {
+.botao img {
+  width: 36px;
+  height: 36px;
+}
+
+.botao:disabled {
+  background-color: rgba(255, 255, 255, .2);
+}
+
+.containerCarrossel {
+  height: 228px;
+  overflow: hidden;
+}
+
+.itens {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  transition: transform 0.3s ease-in-out;
+  padding: 4px;
+}
+
+.cima {
   transform: rotate(-90deg);
 }
 
-.avancar {
+.baixo {
   transform: rotate(90deg);
 }

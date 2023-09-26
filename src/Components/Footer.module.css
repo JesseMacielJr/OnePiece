@@ -10,3 +10,13 @@ footer p {
   font-size: 0.875rem;
   color: rgba(250, 250, 250, 0.5);
 }
+
+footer p span {
+  font-weight: 700;
+  color: #fff;
+}
+
+footer p span:hover {
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.75);
+}

@@ -11,8 +11,10 @@ const Personagem = () => {
   return (
     <div className={styles.personagem}>
       <img src={Logo} alt="One Piece Logo" />
-      <h1>{personagemAtual.nome}</h1>
-      <p>{personagemAtual.descricao}</p>
+      <div className={styles.info}>
+        <h1>{personagemAtual.nome}</h1>
+        <p>{personagemAtual.descricao}</p>
+      </div>
     </div>
   );
 };

@@ -3,7 +3,15 @@ import styles from "./Footer.module.css";
 const Footer = () => {
   return (
     <footer>
-      <p>Feito por Jessé Júnior</p>
+      <a
+        href="https://github.com/JesseMacielJr"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <p>
+          Feito por <span>Jessé Júnior</span>
+        </p>
+      </a>
     </footer>
   );
 };
