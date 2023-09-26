@@ -8,6 +8,13 @@
   margin-bottom: 4rem;
 }
 
+.info {
+  padding: 8px;
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 8px;
+  box-shadow: 0px 0px 0px 2px rgba(255, 0, 0, 0.15);
+}
+
 .personagem h1 {
   color: var(--texto);
   font-size: 3rem;
@@ -20,4 +27,5 @@
   font-size: 1.125rem;
   font-weight: 400;
   max-width: 30rem;
+  line-height: 1.5;
 }
