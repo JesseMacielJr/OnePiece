@@ -3,7 +3,7 @@
   height: 100vh;
   position: absolute;
   z-index: -1;
-  filter: brightness(40%);
+  filter: brightness(50%);
 }
 
 .background img {

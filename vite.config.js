@@ -9,5 +9,6 @@ export default defineConfig({
       // svgr options
     },
   }),],
+  base: "/OnePiece",
 
 });
